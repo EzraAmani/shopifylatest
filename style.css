@@ -502,10 +502,14 @@ body {
     transition: color 0.2s, transform 0.2s;
 }
 
-.wishlist-btn:hover {
+.wishlist-btn .fa-heart.active {
+    color: red;
+}
+
+/* .wishlist-btn:hover {
     color: #ef4444;
     transform: scale(1.05);
-}
+} */
 
 .product-info {
     padding: 16px;
