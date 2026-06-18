@@ -1,331 +1,377 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopify</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <div class="page-wrapper">
-        <nav class="navbar">
-            <div class="navbar-left">
-                <div class="logo-wrapper">
-                    <svg width="115" height="27" viewBox="0 0 115 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M27.0703 10.6016C27.0078 9.97135 26.7396 9.48177 26.2656 9.13281C25.7917 8.78385 25.1484 8.60937 24.3359 8.60937C23.7839 8.60937 23.3177 8.6875 22.9375 8.84375C22.5573 8.99479 22.2656 9.20573 22.0625 9.47656C21.8646 9.7474 21.7656 10.0547 21.7656 10.3984C21.7552 10.6849 21.8151 10.9349 21.9453 11.1484C22.0807 11.362 22.2656 11.5469 22.5 11.7031C22.7344 11.8542 23.0052 11.987 23.3125 12.1016C23.6198 12.2109 23.9479 12.3047 24.2969 12.3828L25.7344 12.7266C26.4323 12.8828 27.0729 13.0911 27.6562 13.3516C28.2396 13.612 28.7448 13.9323 29.1719 14.3125C29.599 14.6927 29.9297 15.1406 30.1641 15.6562C30.4036 16.1719 30.526 16.763 30.5312 17.4297C30.526 18.4089 30.276 19.2578 29.7813 19.9766C29.2917 20.6901 28.5833 21.2448 27.6562 21.6406C26.7344 22.0312 25.6224 22.2266 24.3203 22.2266C23.0286 22.2266 21.9036 22.0286 20.9453 21.6328C19.9922 21.237 19.2474 20.651 18.7109 19.875C18.1797 19.0937 17.901 18.1276 17.875 16.9766H21.1484C21.1849 17.513 21.3385 17.9609 21.6094 18.3203C21.8854 18.6745 22.2526 18.9427 22.7109 19.125C23.1745 19.3021 23.6979 19.3906 24.2812 19.3906C24.8542 19.3906 25.3516 19.3073 25.7734 19.1406C26.2005 18.974 26.5313 18.7422 26.7656 18.4453C27 18.1484 27.1172 17.8073 27.1172 17.4219C27.1172 17.0625 27.0104 16.7604 26.7969 16.5156C26.5885 16.2708 26.2813 16.0625 25.875 15.8906C25.474 15.7187 24.9818 15.5625 24.3984 15.4219L22.6563 14.9844C21.3073 14.6562 20.2422 14.1432 19.4609 13.4453C18.6797 12.7474 18.2917 11.8073 18.2969 10.625C18.2917 9.65625 18.5495 8.8099 19.0703 8.08594C19.5964 7.36198 20.3177 6.79687 21.2344 6.39062C22.151 5.98437 23.1927 5.78125 24.3594 5.78125C25.5469 5.78125 26.5833 5.98437 27.4688 6.39062C28.3594 6.79687 29.0521 7.36198 29.5469 8.08594C30.0417 8.8099 30.2969 9.64844 30.3125 10.6016H27.0703ZM32.8066 22V6H36.1895V12.6016H43.0566V6H46.4316V22H43.0566V15.3906H36.1895V22H32.8066ZM63.9238 14C63.9238 15.7448 63.5931 17.2292 62.9316 18.4531C62.2754 19.6771 61.3796 20.612 60.2441 21.2578C59.1139 21.8984 57.8431 22.2187 56.4316 22.2187C55.0098 22.2187 53.7337 21.8958 52.6035 21.25C51.4733 20.6042 50.5801 19.6693 49.9238 18.4453C49.2676 17.2214 48.9395 15.7396 48.9395 14C48.9395 12.2552 49.2676 10.7708 49.9238 9.54688C50.5801 8.32292 51.4733 7.39062 52.6035 6.75C53.7337 6.10417 55.0098 5.78125 56.4316 5.78125C57.8431 5.78125 59.1139 6.10417 60.2441 6.75C61.3796 7.39062 62.2754 8.32292 62.9316 9.54688C63.5931 10.7708 63.9238 12.2552 63.9238 14ZM60.4941 14C60.4941 12.8698 60.3249 11.9167 59.9863 11.1406C59.653 10.3646 59.1816 9.77604 58.5723 9.375C57.9629 8.97396 57.2493 8.77344 56.4316 8.77344C55.6139 8.77344 54.9004 8.97396 54.291 9.375C53.6816 9.77604 53.2077 10.3646 52.8691 11.1406C52.5358 11.9167 52.3691 12.8698 52.3691 14C52.3691 15.1302 52.5358 16.0833 52.8691 16.8594C53.2077 17.6354 53.6816 18.224 54.291 18.625C54.9004 19.026 55.6139 19.2266 56.4316 19.2266C57.2493 19.2266 57.9629 19.026 58.5723 18.625C59.1816 18.224 59.653 17.6354 59.9863 16.8594C60.3249 16.0833 60.4941 15.1302 60.4941 14ZM66.4297 22V6H72.7422C73.9557 6 74.9896 6.23177 75.8438 6.69531C76.6979 7.15365 77.349 7.79167 77.7969 8.60937C78.25 9.42187 78.4766 10.3594 78.4766 11.4219C78.4766 12.4844 78.2474 13.4219 77.7891 14.2344C77.3307 15.0469 76.6667 15.6797 75.7969 16.1328C74.9323 16.5859 73.8854 16.8125 72.6563 16.8125H68.6328V14.1016H72.1094C72.7604 14.1016 73.2969 13.9896 73.7188 13.7656C74.1458 13.5365 74.4635 13.2214 74.6719 12.8203C74.8854 12.4141 74.9922 11.9479 74.9922 11.4219C74.9922 10.8906 74.8854 10.4271 74.6719 10.0312C74.4635 9.63021 74.1458 9.32031 73.7188 9.10156C73.2917 8.8776 72.75 8.76562 72.0938 8.76562H69.8125V22H66.4297ZM84.0566 6V22H80.6738V6H84.0566ZM86.8398 22V6H97.4336V8.78906H90.2227V12.6016H96.7305V15.3906H90.2227V22H86.8398ZM98.7715 6H102.561L106.209 12.8906H106.365L110.014 6H113.803L107.967 16.3437V22H104.607V16.3437L98.7715 6Z"
-                            fill="black" />
-                        <circle cx="5" cy="15" r="5" fill="#5398F6" />
-                        <circle cx="5" cy="15" r="5" fill="black" fill-opacity="0.2" />
-                        <circle cx="5" cy="15" r="5" fill="black" fill-opacity="0.2" />
-                    </svg>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Collections</a></li>
-                    <li><a href="#">Sale</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
+      <nav class="navbar">
+        <div class="navbar-left">
+          <div class="logo-wrapper">
+            <svg
+              width="115"
+              height="27"
+              viewBox="0 0 115 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27.0703 10.6016C27.0078 9.97135 26.7396 9.48177 26.2656 9.13281C25.7917 8.78385 25.1484 8.60937 24.3359 8.60937C23.7839 8.60937 23.3177 8.6875 22.9375 8.84375C22.5573 8.99479 22.2656 9.20573 22.0625 9.47656C21.8646 9.7474 21.7656 10.0547 21.7656 10.3984C21.7552 10.6849 21.8151 10.9349 21.9453 11.1484C22.0807 11.362 22.2656 11.5469 22.5 11.7031C22.7344 11.8542 23.0052 11.987 23.3125 12.1016C23.6198 12.2109 23.9479 12.3047 24.2969 12.3828L25.7344 12.7266C26.4323 12.8828 27.0729 13.0911 27.6562 13.3516C28.2396 13.612 28.7448 13.9323 29.1719 14.3125C29.599 14.6927 29.9297 15.1406 30.1641 15.6562C30.4036 16.1719 30.526 16.763 30.5312 17.4297C30.526 18.4089 30.276 19.2578 29.7813 19.9766C29.2917 20.6901 28.5833 21.2448 27.6562 21.6406C26.7344 22.0312 25.6224 22.2266 24.3203 22.2266C23.0286 22.2266 21.9036 22.0286 20.9453 21.6328C19.9922 21.237 19.2474 20.651 18.7109 19.875C18.1797 19.0937 17.901 18.1276 17.875 16.9766H21.1484C21.1849 17.513 21.3385 17.9609 21.6094 18.3203C21.8854 18.6745 22.2526 18.9427 22.7109 19.125C23.1745 19.3021 23.6979 19.3906 24.2812 19.3906C24.8542 19.3906 25.3516 19.3073 25.7734 19.1406C26.2005 18.974 26.5313 18.7422 26.7656 18.4453C27 18.1484 27.1172 17.8073 27.1172 17.4219C27.1172 17.0625 27.0104 16.7604 26.7969 16.5156C26.5885 16.2708 26.2813 16.0625 25.875 15.8906C25.474 15.7187 24.9818 15.5625 24.3984 15.4219L22.6563 14.9844C21.3073 14.6562 20.2422 14.1432 19.4609 13.4453C18.6797 12.7474 18.2917 11.8073 18.2969 10.625C18.2917 9.65625 18.5495 8.8099 19.0703 8.08594C19.5964 7.36198 20.3177 6.79687 21.2344 6.39062C22.151 5.98437 23.1927 5.78125 24.3594 5.78125C25.5469 5.78125 26.5833 5.98437 27.4688 6.39062C28.3594 6.79687 29.0521 7.36198 29.5469 8.08594C30.0417 8.8099 30.2969 9.64844 30.3125 10.6016H27.0703ZM32.8066 22V6H36.1895V12.6016H43.0566V6H46.4316V22H43.0566V15.3906H36.1895V22H32.8066ZM63.9238 14C63.9238 15.7448 63.5931 17.2292 62.9316 18.4531C62.2754 19.6771 61.3796 20.612 60.2441 21.2578C59.1139 21.8984 57.8431 22.2187 56.4316 22.2187C55.0098 22.2187 53.7337 21.8958 52.6035 21.25C51.4733 20.6042 50.5801 19.6693 49.9238 18.4453C49.2676 17.2214 48.9395 15.7396 48.9395 14C48.9395 12.2552 49.2676 10.7708 49.9238 9.54688C50.5801 8.32292 51.4733 7.39062 52.6035 6.75C53.7337 6.10417 55.0098 5.78125 56.4316 5.78125C57.8431 5.78125 59.1139 6.10417 60.2441 6.75C61.3796 7.39062 62.2754 8.32292 62.9316 9.54688C63.5931 10.7708 63.9238 12.2552 63.9238 14ZM60.4941 14C60.4941 12.8698 60.3249 11.9167 59.9863 11.1406C59.653 10.3646 59.1816 9.77604 58.5723 9.375C57.9629 8.97396 57.2493 8.77344 56.4316 8.77344C55.6139 8.77344 54.9004 8.97396 54.291 9.375C53.6816 9.77604 53.2077 10.3646 52.8691 11.1406C52.5358 11.9167 52.3691 12.8698 52.3691 14C52.3691 15.1302 52.5358 16.0833 52.8691 16.8594C53.2077 17.6354 53.6816 18.224 54.291 18.625C54.9004 19.026 55.6139 19.2266 56.4316 19.2266C57.2493 19.2266 57.9629 19.026 58.5723 18.625C59.1816 18.224 59.653 17.6354 59.9863 16.8594C60.3249 16.0833 60.4941 15.1302 60.4941 14ZM66.4297 22V6H72.7422C73.9557 6 74.9896 6.23177 75.8438 6.69531C76.6979 7.15365 77.349 7.79167 77.7969 8.60937C78.25 9.42187 78.4766 10.3594 78.4766 11.4219C78.4766 12.4844 78.2474 13.4219 77.7891 14.2344C77.3307 15.0469 76.6667 15.6797 75.7969 16.1328C74.9323 16.5859 73.8854 16.8125 72.6563 16.8125H68.6328V14.1016H72.1094C72.7604 14.1016 73.2969 13.9896 73.7188 13.7656C74.1458 13.5365 74.4635 13.2214 74.6719 12.8203C74.8854 12.4141 74.9922 11.9479 74.9922 11.4219C74.9922 10.8906 74.8854 10.4271 74.6719 10.0312C74.4635 9.63021 74.1458 9.32031 73.7188 9.10156C73.2917 8.8776 72.75 8.76562 72.0938 8.76562H69.8125V22H66.4297ZM84.0566 6V22H80.6738V6H84.0566ZM86.8398 22V6H97.4336V8.78906H90.2227V12.6016H96.7305V15.3906H90.2227V22H86.8398ZM98.7715 6H102.561L106.209 12.8906H106.365L110.014 6H113.803L107.967 16.3437V22H104.607V16.3437L98.7715 6Z"
+                fill="black"
+              />
+              <circle cx="5" cy="15" r="5" fill="#5398F6" />
+              <circle cx="5" cy="15" r="5" fill="black" fill-opacity="0.2" />
+              <circle cx="5" cy="15" r="5" fill="black" fill-opacity="0.2" />
+            </svg>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
 
-            <div class="search-container">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" class="search-input" placeholder="Search products...">
-            </div>
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search products..."
+          />
+        </div>
 
-            <div class="navbar-right">
-                <button class="nav-btn" aria-label="Favorites">
-                    <i class="fa-regular fa-heart"></i>
-                </button>
-                <button class="nav-btn" aria-label="Shopping Cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-                <div class="user-avatar">GA</div>
-            </div>
-        </nav>
-
+        <div class="navbar-right">
+          <button class="nav-btn" aria-label="Favorites">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <button class="nav-btn" aria-label="Shopping Cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <div class="user-avatar">GA</div>
+        </div>
+      </nav>
     </div>
 
     <section class="hero-section">
-        <div class="hero-container">
-            <span class="hero-subtitle">NEW SEASON — 2026</span>
-            <h1 class="hero-title">Crafted for the<br>Considered Life.</h1>
-            <p class="hero-description">
-                Goods made with intention, built to last. Shop essentials that earn their place in your routine.
-            </p>
-            <div class="hero-actions">
-                <a href="#" class="btn btn-primary">Shop now</a>
-                <a href="#" class="btn btn-secondary">View collections</a>
-            </div>
+      <div class="hero-container">
+        <span class="hero-subtitle"
+          >NEW SEASON — <span id="live-date">2026</span></span
+        >
+        <h1 class="hero-title">Crafted for the<br />Considered Life.</h1>
+        <p class="hero-description">
+          Goods made with intention, built to last. Shop essentials that earn
+          their place in your routine.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">Shop now</a>
+          <a href="#" class="btn btn-secondary">View collections</a>
         </div>
+      </div>
     </section>
     <section class="categories-section">
-        <div class="categories-container">
-            <h2 class="section-title">Shop by category</h2>
+      <div class="categories-container">
+        <h2 class="section-title">Shop by category</h2>
 
-            <div class="categories-grid">
-
-                <a href="#" class="category-card">
-                    <div class="card-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600"
-                            alt="Footwear category">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="category-name">Footwear</h3>
-                        <span class="category-link">Shop <span class="arrow">&rarr;</span></span>
-                    </div>
-                </a>
-
+        <div class="categories-grid">
+          <a href="#" class="category-card">
+            <div class="card-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600"
+                alt="Footwear category"
+              />
             </div>
+            <div class="card-content">
+              <h3 class="category-name">Footwear</h3>
+              <span class="category-link"
+                >Shop <span class="arrow">&rarr;</span></span
+              >
+            </div>
+          </a>
         </div>
+      </div>
     </section>
     <section class="featured-section">
-        <div class="featured-container">
-
-            <div class="featured-header">
-                <h2 class="featured-title">Featured products</h2>
-                <a href="#" class="view-all-link">View all <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-
-            <div class="products-grid">
-
-                <div class="product-card">
-                    <div class="product-image-container">
-                        <span class="badge discount-badge">-17%</span>
-                        <button onclick="togglefavorite(this)" class="wishlist-btn" aria-label="Add to wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600"
-                            alt="Tiempo shoe" class="product-image">
-                    </div>
-
-                    <div class="product-info">
-                        <span class="product-category">FOOTWEAR</span>
-                        <h3 class="product-name">Nike RN</h3>
-
-                        <div class="rating-container">
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star-half-stroke"></i>
-                            </div>
-                            <span class="rating-count">(10)</span>
-                        </div>
-
-                        <div class="price-container">
-                            <span class="current-price">Ksh 2,500</span>
-                            <span class="old-price">Ksh 3,000</span>
-                        </div>
-
-                        <button onclick="addtocart(this)" class="add-to-cart-btn">
-                            <i class="fa-solid fa-cart-shopping"></i> Add to cart
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image-container">
-                        <span class="badge discount-badge">-17%</span>
-                        <button onclick="togglefavorite(this)" class="wishlist-btn" aria-label="Add to wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=600"
-                            alt="Black and White Minimalist Sneaker" class="product-image">
-                    </div>
-
-                    <div class="product-info">
-                        <span class="product-category">FOOTWEAR</span>
-                        <h3 class="product-name">Nike Airforce</h3>
-
-                        <div class="rating-container">
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <span class="rating-count">(10)</span>
-                        </div>
-
-                        <div class="price-container">
-                            <span class="current-price">Ksh 3,000</span>
-                            <span class="old-price">Ksh 3,500</span>
-                        </div>
-
-                        <button onclick="addtocart(this)" class="add-to-cart-btn">
-                            <i class="fa-solid fa-cart-shopping"></i> Add to cart
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image-container">
-                        <span class="badge discount-badge">-17%</span>
-                        <button onclick="togglefavorite(this)" class="wishlist-btn" aria-label="Add to wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-                        <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=600"
-                            alt="White Running Sneaker with Orange Accents" class="product-image">
-                    </div>
-
-                    <div class="product-info">
-                        <span class="product-category">FOOTWEAR</span>
-                        <h3 class="product-name">Chelsea Boots</h3>
-
-                        <div class="rating-container">
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <span class="rating-count">(10)</span>
-                        </div>
-
-                        <div class="price-container">
-                            <span class="current-price">Ksh 1,000</span>
-                            <span class="old-price">Ksh 3,000</span>
-                        </div>
-
-                        <button onclick="addtocart(this)" class="add-to-cart-btn">
-                            <i class="fa-solid fa-cart-shopping"></i> Add to cart
-                        </button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image-container">
-                        <span class="badge discount-badge">-17%</span>
-                        <button onclick="togglefavorite(this)" class="wishlist-btn" aria-label="Add to wishlist">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-                        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=600"
-                            alt="White and Teal Classic Sneaker" class="product-image">
-                    </div>
-
-                    <div class="product-info">
-                        <span class="product-category">FOOTWEAR</span>
-                        <h3 class="product-name">Nike Air Max 90</h3>
-
-                        <div class="rating-container">
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <span class="rating-count">(10)</span>
-                        </div>
-
-                        <div class="price-container">
-                            <span class="current-price">Ksh 9,500</span>
-                            <span class="old-price">Ksh 11,000</span>
-                        </div>
-
-                        <button onclick="addtocart(this)" class="add-to-cart-btn">
-                            <i class="fa-solid fa-cart-shopping"></i> Add to cart
-                        </button>
-                    </div>
-                </div>
-
-
-
-            </div>
+      <div class="featured-container">
+        <div class="featured-header">
+          <h2 class="featured-title">Featured products</h2>
+          <a href="#" class="view-all-link"
+            >View all <i class="fa-solid fa-arrow-right"></i
+          ></a>
         </div>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image-container">
+              <span class="badge discount-badge">-17%</span>
+              <button
+                onclick="togglefavorite(this)"
+                class="wishlist-btn"
+                aria-label="Add to wishlist"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600"
+                alt="Tiempo shoe"
+                class="product-image"
+              />
+            </div>
+
+            <div class="product-info">
+              <span class="product-category">FOOTWEAR</span>
+              <h3 class="product-name">Nike RN</h3>
+
+              <div class="rating-container">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span class="rating-count">(10)</span>
+              </div>
+
+              <div class="price-container">
+                <span class="current-price">Ksh 2,500</span>
+                <span class="old-price">Ksh 3,000</span>
+              </div>
+
+              <button onclick="addtocart(this)" class="add-to-cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add to cart
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image-container">
+              <span class="badge discount-badge">-17%</span>
+              <button
+                onclick="togglefavorite(this)"
+                class="wishlist-btn"
+                aria-label="Add to wishlist"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img
+                src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=600"
+                alt="Black and White Minimalist Sneaker"
+                class="product-image"
+              />
+            </div>
+
+            <div class="product-info">
+              <span class="product-category">FOOTWEAR</span>
+              <h3 class="product-name">Nike Airforce</h3>
+
+              <div class="rating-container">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <span class="rating-count">(10)</span>
+              </div>
+
+              <div class="price-container">
+                <span class="current-price">Ksh 3,000</span>
+                <span class="old-price">Ksh 3,500</span>
+              </div>
+
+              <button onclick="addtocart(this)" class="add-to-cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add to cart
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image-container">
+              <span class="badge discount-badge">-17%</span>
+              <button
+                onclick="togglefavorite(this)"
+                class="wishlist-btn"
+                aria-label="Add to wishlist"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img
+                src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=600"
+                alt="White Running Sneaker with Orange Accents"
+                class="product-image"
+              />
+            </div>
+
+            <div class="product-info">
+              <span class="product-category">FOOTWEAR</span>
+              <h3 class="product-name">Chelsea Boots</h3>
+
+              <div class="rating-container">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="rating-count">(10)</span>
+              </div>
+
+              <div class="price-container">
+                <span class="current-price">Ksh 1,000</span>
+                <span class="old-price">Ksh 3,000</span>
+              </div>
+
+              <button onclick="addtocart(this)" class="add-to-cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add to cart
+              </button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image-container">
+              <span class="badge discount-badge">-17%</span>
+              <button
+                onclick="togglefavorite(this)"
+                class="wishlist-btn"
+                aria-label="Add to wishlist"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img
+                src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=600"
+                alt="White and Teal Classic Sneaker"
+                class="product-image"
+              />
+            </div>
+
+            <div class="product-info">
+              <span class="product-category">FOOTWEAR</span>
+              <h3 class="product-name">Nike Air Max 90</h3>
+
+              <div class="rating-container">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <span class="rating-count">(10)</span>
+              </div>
+
+              <div class="price-container">
+                <span class="current-price">Ksh 9,500</span>
+                <span class="old-price">Ksh 11,000</span>
+              </div>
+
+              <button onclick="addtocart(this)" class="add-to-cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="promo-banner">
-        <div class="promo-container">
-            <div class="promo-text-content">
-                <h2 class="promo-title">Free shipping on orders over KSh 5,000</h2>
-                <p class="promo-subtitle">Delivered in 2–4 business days, Kenya-wide.</p>
-            </div>
-            <div class="promo-action">
-                <a href="#" class="btn-promo">Start shopping</a>
-            </div>
+      <div class="promo-container">
+        <div class="promo-text-content">
+          <h2 class="promo-title">Free shipping on orders over KSh 5,000</h2>
+          <p class="promo-subtitle">
+            Delivered in 2–4 business days, Kenya-wide.
+          </p>
         </div>
+        <div class="promo-action">
+          <a href="#" class="btn-promo">Start shopping</a>
+        </div>
+      </div>
     </section>
     <footer class="site-footer">
-        <div class="footer-container">
-
-            <div class="footer-top-grid">
-
-                <div class="footer-brand-col">
-                    <div class="footer-logo">
-                        <svg width="115" height="27" viewBox="0 0 115 27" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M27.0703 10.6016C27.0078 9.97135 26.7396 9.48177 26.2656 9.13281C25.7917 8.78385 25.1484 8.60937 24.3359 8.60937C23.7839 8.60937 23.3177 8.6875 22.9375 8.84375C22.5573 8.99479 22.2656 9.20573 22.0625 9.47656C21.8646 9.7474 21.7656 10.0547 21.7656 10.3984C21.7552 10.6849 21.8151 10.9349 21.9453 11.1484C22.0807 11.362 22.2656 11.5469 22.5 11.7031C22.7344 11.8542 23.0052 11.987 23.3125 12.1016C23.6198 12.2109 23.9479 12.3047 24.2969 12.3828L25.7344 12.7266C26.4323 12.8828 27.0729 13.0911 27.6562 13.3516C28.2396 13.612 28.7448 13.9323 29.1719 14.3125C29.599 14.6927 29.9297 15.1406 30.1641 15.6562C30.4036 16.1719 30.526 16.763 30.5312 17.4297C30.526 18.4089 30.276 19.2578 29.7813 19.9766C29.2917 20.6901 28.5833 21.2448 27.6562 21.6406C26.7344 22.0312 25.6224 22.2266 24.3203 22.2266C23.0286 22.2266 21.9036 22.0286 20.9453 21.6328C19.9922 21.237 19.2474 20.651 18.7109 19.875C18.1797 19.0937 17.901 18.1276 17.875 16.9766H21.1484C21.1849 17.513 21.3385 17.9609 21.6094 18.3203C21.8854 18.6745 22.2526 18.9427 22.7109 19.125C23.1745 19.3021 23.6979 19.3906 24.2812 19.3906C24.8542 19.3906 25.3516 19.3073 25.7734 19.1406C26.2005 18.974 26.5313 18.7422 26.7656 18.4453C27 18.1484 27.1172 17.8073 27.1172 17.4219C27.1172 17.0625 27.0104 16.7604 26.7969 16.5156C26.5885 16.2708 26.2813 16.0625 25.875 15.8906C25.474 15.7187 24.9818 15.5625 24.3984 15.4219L22.6563 14.9844C21.3073 14.6562 20.2422 14.1432 19.4609 13.4453C18.6797 12.7474 18.2917 11.8073 18.2969 10.625C18.2917 9.65625 18.5495 8.8099 19.0703 8.08594C19.5964 7.36198 20.3177 6.79687 21.2344 6.39062C22.151 5.98437 23.1927 5.78125 24.3594 5.78125C25.5469 5.78125 26.5833 5.98437 27.4688 6.39062C28.3594 6.79687 29.0521 7.36198 29.5469 8.08594C30.0417 8.8099 30.2969 9.64844 30.3125 10.6016H27.0703ZM32.8066 22V6H36.1895V12.6016H43.0566V6H46.4316V22H43.0566V15.3906H36.1895V22H32.8066ZM63.9238 14C63.9238 15.7448 63.5931 17.2292 62.9316 18.4531C62.2754 19.6771 61.3796 20.612 60.2441 21.2578C59.1139 21.8984 57.8431 22.2187 56.4316 22.2187C55.0098 22.2187 53.7337 21.8958 52.6035 21.25C51.4733 20.6042 50.5801 19.6693 49.9238 18.4453C49.2676 17.2214 48.9395 15.7396 48.9395 14C48.9395 12.2552 49.2676 10.7708 49.9238 9.54688C50.5801 8.32292 51.4733 7.39062 52.6035 6.75C53.7337 6.10417 55.0098 5.78125 56.4316 5.78125C57.8431 5.78125 59.1139 6.10417 60.2441 6.75C61.3796 7.39062 62.2754 8.32292 62.9316 9.54688C63.5931 10.7708 63.9238 12.2552 63.9238 14ZM60.4941 14C60.4941 12.8698 60.3249 11.9167 59.9863 11.1406C59.653 10.3646 59.1816 9.77604 58.5723 9.375C57.9629 8.97396 57.2493 8.77344 56.4316 8.77344C55.6139 8.77344 54.9004 8.97396 54.291 9.375C53.6816 9.77604 53.2077 10.3646 52.8691 11.1406C52.5358 11.9167 52.3691 12.8698 52.3691 14C52.3691 15.1302 52.5358 16.0833 52.8691 16.8594C53.2077 17.6354 53.6816 18.224 54.291 18.625C54.9004 19.026 55.6139 19.2266 56.4316 19.2266C57.2493 19.2266 57.9629 19.026 58.5723 18.625C59.1816 18.224 59.653 17.6354 59.9863 16.8594C60.3249 16.0833 60.4941 15.1302 60.4941 14ZM66.4297 22V6H72.7422C73.9557 6 74.9896 6.23177 75.8438 6.69531C76.6979 7.15365 77.349 7.79167 77.7969 8.60937C78.25 9.42187 78.4766 10.3594 78.4766 11.4219C78.4766 12.4844 78.2474 13.4219 77.7891 14.2344C77.3307 15.0469 76.6667 15.6797 75.7969 16.1328C74.9323 16.5859 73.8854 16.8125 72.6563 16.8125H68.6328V14.1016H72.1094C72.7604 14.1016 73.2969 13.9896 73.7188 13.7656C74.1458 13.5365 74.4635 13.2214 74.6719 12.8203C74.8854 12.4141 74.9922 11.9479 74.9922 11.4219C74.9922 10.8906 74.8854 10.4271 74.6719 10.0312C74.4635 9.63021 74.1458 9.32031 73.7188 9.10156C73.2917 8.8776 72.75 8.76562 72.0938 8.76562H69.8125V22H66.4297ZM84.0566 6V22H80.6738V6H84.0566ZM86.8398 22V6H97.4336V8.78906H90.2227V12.6016H96.7305V15.3906H90.2227V22H86.8398ZM98.7715 6H102.561L106.209 12.8906H106.365L110.014 6H113.803L107.967 16.3437V22H104.607V16.3437L98.7715 6Z"
-                                fill="black" />
-                            <circle cx="5" cy="15" r="5" fill="#5398F6" />
-                            <circle cx="5" cy="15" r="5" fill="black" fill-opacity="0.2" />
-                            <circle cx="5" cy="15" r="5" fill="black" fill-opacity="0.2" />
-                        </svg>
-                    </div>
-                    <p class="brand-mission">Thoughtfully made goods for people who care about quality and craft.
-                    </p>
-                </div>
-
-                <div class="footer-links-col">
-                    <h3 class="footer-col-title">Shop</h3>
-                    <ul class="footer-links-list">
-                        <li><a href="#">All Products</a></li>
-                        <li><a href="#">Collections</a></li>
-                        <li><a href="#">Sale</a></li>
-                        <li><a href="#">New Arrivals</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links-col">
-                    <h3 class="footer-col-title">Support</h3>
-                    <ul class="footer-links-list">
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links-col">
-                    <h3 class="footer-col-title">Company</h3>
-                    <ul class="footer-links-list">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                    </ul>
-                </div>
-
+      <div class="footer-container">
+        <div class="footer-top-grid">
+          <div class="footer-brand-col">
+            <div class="footer-logo">
+              <svg
+                width="115"
+                height="27"
+                viewBox="0 0 115 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.0703 10.6016C27.0078 9.97135 26.7396 9.48177 26.2656 9.13281C25.7917 8.78385 25.1484 8.60937 24.3359 8.60937C23.7839 8.60937 23.3177 8.6875 22.9375 8.84375C22.5573 8.99479 22.2656 9.20573 22.0625 9.47656C21.8646 9.7474 21.7656 10.0547 21.7656 10.3984C21.7552 10.6849 21.8151 10.9349 21.9453 11.1484C22.0807 11.362 22.2656 11.5469 22.5 11.7031C22.7344 11.8542 23.0052 11.987 23.3125 12.1016C23.6198 12.2109 23.9479 12.3047 24.2969 12.3828L25.7344 12.7266C26.4323 12.8828 27.0729 13.0911 27.6562 13.3516C28.2396 13.612 28.7448 13.9323 29.1719 14.3125C29.599 14.6927 29.9297 15.1406 30.1641 15.6562C30.4036 16.1719 30.526 16.763 30.5312 17.4297C30.526 18.4089 30.276 19.2578 29.7813 19.9766C29.2917 20.6901 28.5833 21.2448 27.6562 21.6406C26.7344 22.0312 25.6224 22.2266 24.3203 22.2266C23.0286 22.2266 21.9036 22.0286 20.9453 21.6328C19.9922 21.237 19.2474 20.651 18.7109 19.875C18.1797 19.0937 17.901 18.1276 17.875 16.9766H21.1484C21.1849 17.513 21.3385 17.9609 21.6094 18.3203C21.8854 18.6745 22.2526 18.9427 22.7109 19.125C23.1745 19.3021 23.6979 19.3906 24.2812 19.3906C24.8542 19.3906 25.3516 19.3073 25.7734 19.1406C26.2005 18.974 26.5313 18.7422 26.7656 18.4453C27 18.1484 27.1172 17.8073 27.1172 17.4219C27.1172 17.0625 27.0104 16.7604 26.7969 16.5156C26.5885 16.2708 26.2813 16.0625 25.875 15.8906C25.474 15.7187 24.9818 15.5625 24.3984 15.4219L22.6563 14.9844C21.3073 14.6562 20.2422 14.1432 19.4609 13.4453C18.6797 12.7474 18.2917 11.8073 18.2969 10.625C18.2917 9.65625 18.5495 8.8099 19.0703 8.08594C19.5964 7.36198 20.3177 6.79687 21.2344 6.39062C22.151 5.98437 23.1927 5.78125 24.3594 5.78125C25.5469 5.78125 26.5833 5.98437 27.4688 6.39062C28.3594 6.79687 29.0521 7.36198 29.5469 8.08594C30.0417 8.8099 30.2969 9.64844 30.3125 10.6016H27.0703ZM32.8066 22V6H36.1895V12.6016H43.0566V6H46.4316V22H43.0566V15.3906H36.1895V22H32.8066ZM63.9238 14C63.9238 15.7448 63.5931 17.2292 62.9316 18.4531C62.2754 19.6771 61.3796 20.612 60.2441 21.2578C59.1139 21.8984 57.8431 22.2187 56.4316 22.2187C55.0098 22.2187 53.7337 21.8958 52.6035 21.25C51.4733 20.6042 50.5801 19.6693 49.9238 18.4453C49.2676 17.2214 48.9395 15.7396 48.9395 14C48.9395 12.2552 49.2676 10.7708 49.9238 9.54688C50.5801 8.32292 51.4733 7.39062 52.6035 6.75C53.7337 6.10417 55.0098 5.78125 56.4316 5.78125C57.8431 5.78125 59.1139 6.10417 60.2441 6.75C61.3796 7.39062 62.2754 8.32292 62.9316 9.54688C63.5931 10.7708 63.9238 12.2552 63.9238 14ZM60.4941 14C60.4941 12.8698 60.3249 11.9167 59.9863 11.1406C59.653 10.3646 59.1816 9.77604 58.5723 9.375C57.9629 8.97396 57.2493 8.77344 56.4316 8.77344C55.6139 8.77344 54.9004 8.97396 54.291 9.375C53.6816 9.77604 53.2077 10.3646 52.8691 11.1406C52.5358 11.9167 52.3691 12.8698 52.3691 14C52.3691 15.1302 52.5358 16.0833 52.8691 16.8594C53.2077 17.6354 53.6816 18.224 54.291 18.625C54.9004 19.026 55.6139 19.2266 56.4316 19.2266C57.2493 19.2266 57.9629 19.026 58.5723 18.625C59.1816 18.224 59.653 17.6354 59.9863 16.8594C60.3249 16.0833 60.4941 15.1302 60.4941 14ZM66.4297 22V6H72.7422C73.9557 6 74.9896 6.23177 75.8438 6.69531C76.6979 7.15365 77.349 7.79167 77.7969 8.60937C78.25 9.42187 78.4766 10.3594 78.4766 11.4219C78.4766 12.4844 78.2474 13.4219 77.7891 14.2344C77.3307 15.0469 76.6667 15.6797 75.7969 16.1328C74.9323 16.5859 73.8854 16.8125 72.6563 16.8125H68.6328V14.1016H72.1094C72.7604 14.1016 73.2969 13.9896 73.7188 13.7656C74.1458 13.5365 74.4635 13.2214 74.6719 12.8203C74.8854 12.4141 74.9922 11.9479 74.9922 11.4219C74.9922 10.8906 74.8854 10.4271 74.6719 10.0312C74.4635 9.63021 74.1458 9.32031 73.7188 9.10156C73.2917 8.8776 72.75 8.76562 72.0938 8.76562H69.8125V22H66.4297ZM84.0566 6V22H80.6738V6H84.0566ZM86.8398 22V6H97.4336V8.78906H90.2227V12.6016H96.7305V15.3906H90.2227V22H86.8398ZM98.7715 6H102.561L106.209 12.8906H106.365L110.014 6H113.803L107.967 16.3437V22H104.607V16.3437L98.7715 6Z"
+                  fill="black"
+                />
+                <circle cx="5" cy="15" r="5" fill="#5398F6" />
+                <circle cx="5" cy="15" r="5" fill="black" fill-opacity="0.2" />
+                <circle cx="5" cy="15" r="5" fill="black" fill-opacity="0.2" />
+              </svg>
             </div>
+            <p class="brand-mission">
+              Thoughtfully made goods for people who care about quality and
+              craft.
+            </p>
+          </div>
 
-            <div class="footer-bottom-bar">
-                <span class="copyright-text">&copy; 2026 Shopify Demo. All rights reserved.</span>
-                <div class="footer-legal-links">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                </div>
-            </div>
+          <div class="footer-links-col">
+            <h3 class="footer-col-title">Shop</h3>
+            <ul class="footer-links-list">
+              <li><a href="#">All Products</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Sale</a></li>
+              <li><a href="#">New Arrivals</a></li>
+            </ul>
+          </div>
 
+          <div class="footer-links-col">
+            <h3 class="footer-col-title">Support</h3>
+            <ul class="footer-links-list">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h3 class="footer-col-title">Company</h3>
+            <ul class="footer-links-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-bottom-bar">
+          <span class="copyright-text"
+            >&copy; 2026 Shopify Demo. All rights reserved.</span
+          >
+          <div class="footer-legal-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
-
     <script src="app.js"></script>
-
-</body>
-
+  </body>
 </html>
