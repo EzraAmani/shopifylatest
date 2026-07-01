@@ -4,15 +4,39 @@ function togglefavorite(button) {
   favoriteicon.classList.toggle("active");
   favoriteicon.classList.toggle("fa-regular");
   favoriteicon.classList.toggle("fa-solid");
+
+  updateWishlistCount();
+}
+
+function updateWishlistCount() {
+  const activeFavorites = document.querySelectorAll(
+    ".product-card .fa-solid.fa-heart",
+  );
+
+  const badge = document.querySelector(".wishlist-count");
+
+  if (badge) {
+    const count = activeFavorites.length;
+    badge.textContent = count;
+
+    if (count > 0) {
+      badge.style.display = "inline-block";
+    } else {
+      badge.style.display = "none";
+    }
+  }
 }
 
 //this is the add to cart functionality
 function addtocart(button) {
-  // const button = document.querySelector('.add-to-cart-btn');
-  button.innerHTML = '<i class="fa-solid fa-check"></i> Added to cart';
+  if (button.innerHTML.includes("Added to cart")) {
+    button.innerHTML = '<i class="fa-solid fa-cart-shopping"></i> Add to cart';
+  } else {
+    button.innerHTML = '<i class="fa-solid fa-check"></i> Added to cart';
+  }
 }
 
-//this is the sort assignment
+//this the sort assignment
 let priceList = [32, 23, 9, 11, 123];
 
 priceList.sort(function (a, b) {
@@ -35,33 +59,3 @@ document.addEventListener("DOMContentLoaded", () => {
     dateElement.textContent = formattedDate.toUpperCase();
   }
 });
-
-//this is just me practising dates
-
-// const date = new Date();
-
-// const year = date.getFullYear();
-// const month = date.getMonth();
-// const day = date.getDate();
-// const hour = date.getHours();
-// const minutes = date.getMinutes();
-// const seconds = date.getSeconds();
-// const dayOfWeek = date.getDay();
-
-// console.log(year);
-// console.log(month);
-// console.log(day);
-// console.log(hour);
-// console.log(minutes);
-// console.log(seconds);
-// console.log(dayOfWeek);
-// const date = new Date();
-
-// date.setFullYear(2024);
-// date.setMonth(0);
-// date.setDate(1);
-// date.setHours(2);
-// date.setMinutes(3);
-// date.setSeconds(4);
-
-// console.log(date);

@@ -94,6 +94,7 @@ body {
 }
 
 .nav-btn {
+  position: relative;
   background: none;
   border: none;
   font-size: 18px;
@@ -104,6 +105,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: color var(--transition);
+  /* background-color: red; */
 }
 
 .nav-btn:hover {
@@ -124,6 +126,21 @@ body {
   justify-content: center;
   cursor: pointer;
   user-select: none;
+}
+
+.wishlist-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff4d4d; /* Red badge color */
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+  min-width: 10px;
+  text-align: center;
+  display: none; /* Hidden by default when count is 0 */
 }
 
 .search-container {
