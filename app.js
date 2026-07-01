@@ -1,4 +1,3 @@
-//this the favorites button functionality
 function togglefavorite(button) {
   const favoriteicon = button.querySelector(".fa-heart");
   favoriteicon.classList.toggle("active");
@@ -27,7 +26,6 @@ function updateWishlistCount() {
   }
 }
 
-//this is the add to cart functionality
 function addtocart(button) {
   if (button.innerHTML.includes("Added to cart")) {
     button.innerHTML = '<i class="fa-solid fa-cart-shopping"></i> Add to cart';
@@ -37,7 +35,6 @@ function addtocart(button) {
     button.classList.add("in-cart");
   }
 
-  // Update the navbar count immediately
   updateCartCount();
 }
 
@@ -58,7 +55,6 @@ function updateCartCount() {
   }
 }
 
-//this the sort assignment
 let priceList = [32, 23, 9, 11, 123];
 
 priceList.sort(function (a, b) {
@@ -66,8 +62,6 @@ priceList.sort(function (a, b) {
 });
 
 console.log(priceList);
-
-//so this is the code for how the date works
 
 document.addEventListener("DOMContentLoaded", () => {
   const dateElement = document.getElementById("live-date");
