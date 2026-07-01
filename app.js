@@ -31,8 +31,30 @@ function updateWishlistCount() {
 function addtocart(button) {
   if (button.innerHTML.includes("Added to cart")) {
     button.innerHTML = '<i class="fa-solid fa-cart-shopping"></i> Add to cart';
+    button.classList.remove("in-cart");
   } else {
     button.innerHTML = '<i class="fa-solid fa-check"></i> Added to cart';
+    button.classList.add("in-cart");
+  }
+
+  // Update the navbar count immediately
+  updateCartCount();
+}
+
+function updateCartCount() {
+  const activeCartItems = document.querySelectorAll(".add-to-cart-btn.in-cart");
+
+  const badge = document.querySelector(".cart-count");
+
+  if (badge) {
+    const count = activeCartItems.length;
+    badge.textContent = count;
+
+    if (count > 0) {
+      badge.style.display = "inline-block";
+    } else {
+      badge.style.display = "none";
+    }
   }
 }
 

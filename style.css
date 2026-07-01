@@ -132,7 +132,7 @@ body {
   position: absolute;
   top: -5px;
   right: -5px;
-  background-color: #ff4d4d; /* Red badge color */
+  background-color: #5398f6;
   color: white;
   font-size: 11px;
   font-weight: bold;
@@ -140,7 +140,22 @@ body {
   padding: 2px 6px;
   min-width: 10px;
   text-align: center;
-  display: none; /* Hidden by default when count is 0 */
+  display: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #5398f6;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+  min-width: 10px;
+  text-align: center;
+  display: none;
 }
 
 .search-container {
