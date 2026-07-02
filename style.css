@@ -163,9 +163,10 @@ body {
   align-items: center;
   position: relative;
   width: 100%;
-  max-width: 250px;
+  max-width: 400px;
   /* margin-left: auto; */
-  margin-left: 330px;
+  margin-left: 200px;
+  /* background-color: red; */
 }
 
 .search-input {
