@@ -113,8 +113,8 @@ body {
 }
 
 .user-avatar {
-  width: 32px;
-  height: 32px;
+  width: 27px;
+  height: 26px;
   background-color: #f1f5f9;
   color: #334155;
   font-size: 12px;
@@ -202,18 +202,22 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
+    padding: 12px 16px;
+    position: relative;
+  }
+
+  .navbar-right {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 16px;
-    width: 100%;
-    box-sizing: border-box;
+    gap: 20px;
+    padding-right: 10px;
   }
 
   .navbar-left {
     display: flex;
     align-items: center;
-    gap: 0;
+    gap: 32px;
+    padding-left: 10px;
   }
 
   .nav-links {
@@ -221,26 +225,48 @@ body {
   }
 
   .search-container {
-    flex: 1;
-    max-width: 180px;
-    margin-left: 12px;
-    margin-right: 12px;
+    max-width: 40px;
+    margin-left: auto;
+    margin-right: 2px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .search-input {
-    width: 100%;
-    padding: 8px 10px 8px 32px;
-    font-size: 13px;
+    padding: 8px 0 8px 32px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .search-input::placeholder {
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
 
   .search-icon {
-    left: 10px;
+    left: 8px;
+    font-size: 16px;
+    color: #1e293b;
   }
 
-  .navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  .search-container:focus-within {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    max-width: calc(100% - 32px);
+    z-index: 10;
+    background-color: #ffffff;
+  }
+
+  .search-container:focus-within .search-input {
+    padding: 10px 12px 10px 40px;
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+    cursor: text;
+  }
+
+  .search-container:focus-within .search-input::placeholder {
+    opacity: 1;
   }
 }
 
