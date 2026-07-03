@@ -204,6 +204,9 @@ body {
   .navbar {
     padding: 12px 16px;
     position: relative;
+    width: 480px;
+    height: 60px;
+    box-sizing: border-box;
   }
 
   .navbar-right {
@@ -229,6 +232,7 @@ body {
     margin-left: auto;
     margin-right: 2px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* background-color: red; */
   }
 
   .search-input {
@@ -236,15 +240,17 @@ body {
     cursor: pointer;
     background: transparent;
     border-color: transparent;
+    /* background-color: red; */
   }
 
   .search-input::placeholder {
     opacity: 0;
     transition: opacity 0.2s ease;
+    /* background-color: red; */
   }
 
   .search-icon {
-    left: 8px;
+    left: 2px;
     font-size: 16px;
     color: #1e293b;
   }
@@ -267,6 +273,10 @@ body {
 
   .search-container:focus-within .search-input::placeholder {
     opacity: 1;
+  }
+
+  .search-container:focus-within .search-icon {
+    left: 12px;
   }
 }
 
